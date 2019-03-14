@@ -1,0 +1,15 @@
+//register-bykova-db
+
+DROP TABLE IF EXISTS users;
+
+CREATE TABLE users( 
+	id int AUTO_INCREMENT PRIMARY key, 
+	name NVARCHAR(255) not null, 
+	surName NVARCHAR(255) not null, 
+	phone NVARCHAR(20) UNIQUE not null, 
+	street NVARCHAR(200) not null, 
+	numHome NVARCHAR(10) not null, 
+	city NVARCHAR(200) not null, 
+	`comment` NVARCHAR(255) not null,
+	feedbackDataid nvarchar(255)
+);
